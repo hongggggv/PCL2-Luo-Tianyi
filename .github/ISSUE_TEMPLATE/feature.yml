@@ -14,6 +14,8 @@ body:
       required: true
     - label: "我知晓还没做的新功能真的太多了，忙不过来，所以新功能提案几乎不会被处理，也不建议再提交新功能提案 qwq……"
       required: true
+    - label: "我已知悉开发者确认后不对这类 Issue 的完成时间作出任何保证，并有足够的耐心等待开发者的处理，同时已知悉如果我作出催促、质问或类似的举动，这个 Issue 可能会被直接关闭"
+      required: true
 - type: textarea
   id: "yml-2"
   attributes:
