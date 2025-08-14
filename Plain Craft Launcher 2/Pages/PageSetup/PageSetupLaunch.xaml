@@ -171,7 +171,7 @@
                     </Grid>
                 </StackPanel>
             </local:MyCard>
-            <local:MyCard x:Name="CardSkin" Margin="0,0,0,15" Title="离线皮肤" CanSwap="True" IsSwaped="True">
+            <local:MyCard x:Name="CardSkin" Margin="0,0,0,15" Title="离线皮肤" CanSwap="True" IsSwapped="True">
                 <StackPanel Margin="25,40,25,15">
                     <local:MyHint Text="由于技术问题，此功能只保证对 1.19.2 以前的版本有效！" Theme="Yellow" Margin="0,0,0,10" />
                     <Grid Margin="-1,0,0,0">
@@ -218,7 +218,7 @@
                     </Grid>
                 </StackPanel>
             </local:MyCard>
-            <local:MyCard Margin="0,0,0,15" Title="高级启动选项" IsSwaped="True" CanSwap="True">
+            <local:MyCard Margin="0,0,0,15" Title="高级启动选项" IsSwapped="True" CanSwap="True">
                 <Grid Margin="25,40,25,15">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto" />
@@ -235,14 +235,14 @@
                         <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
                     <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,25,0">
-                        <TextBlock Text="JVM 参数头部" VerticalAlignment="Center" />
+                        <TextBlock Text="Java 虚拟机参数" VerticalAlignment="Center" />
                         <local:MyIconButton Height="23" Margin="0,1,0,0" x:Name="BtnAdvanceJvmReset" VerticalAlignment="Center" 
                                         ToolTip="还原" ToolTipService.Placement="Right" ToolTipService.InitialShowDelay="200" ToolTipService.VerticalOffset="-1"
                                         Logo="M530 0c287 0 521 229 521 511s-233 511-521 511c-233 0-436-151-500-368a63 63 0 0 1 44-79 65 65 0 0 1 80 43c48 162 200 276 375 276 215 0 390-171 390-383s-174-383-390-383c-103 0-199 39-270 106l21-5a63 63 0 0 1 33 123l-157 42a65 65 0 0 1-90-42l-49-183a65 65 0 1 1 126-33l6 26A524 524 0 0 1 530 0z" LogoScale="0.9" />
                     </StackPanel>
                     <local:MyTextBox x:Name="TextAdvanceJvm" Grid.ColumnSpan="2" Tag="LaunchAdvanceJvm" Grid.Column="1" ToolTip="启动 Minecraft 时使用的额外 JVM 参数，除非有确定把握，否则请不要修改。&#xa;支持 Minecraft 版本 JSON 中的字符串替换标记，例如 ${library_directory}。" MaxLength="4000"
                                  Height="100" AcceptsReturn="True" TextWrapping="Wrap" VerticalContentAlignment="Top" Padding="0,5" VerticalScrollBarVisibility="Auto" />
-                    <TextBlock Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left" Text="游戏参数尾部" Margin="0,0,25,0" />
+                    <TextBlock Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left" Text="游戏参数" Margin="0,0,25,0" />
                     <local:MyTextBox x:Name="TextAdvanceGame" Grid.Row="2" Grid.ColumnSpan="2" Tag="LaunchAdvanceGame" Grid.Column="1" ToolTip="文本框中的内容将会被直接拼合在启动参数的末尾。&#xa;例如，输入 --demo 则会以试玩模式启动游戏。&#xa;支持 Minecraft 版本 JSON 中的字符串替换标记，例如 ${library_directory}。" />
                     <TextBlock Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" Text="启动前执行命令" Margin="0,0,25,0" />
                     <local:MyTextBox x:Name="TextAdvanceRun" Grid.Row="4" Grid.ColumnSpan="2" Tag="LaunchAdvanceRun" Grid.Column="1" HintText=""
